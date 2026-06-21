@@ -184,18 +184,6 @@ Please refer to [CONTRIBUTOR.md](./CONTRIBUTOR.md) for local development setup, 
 
 ---
 
-## 📈 Star History
-
-<a href="https://star-history.com/#riteshthakur21/JARVIS&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=riteshthakur21/JARVIS&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=riteshthakur21/JARVIS&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=riteshthakur21/JARVIS&type=Date" />
- </picture>
-</a>
-
----
-
 ## 👤 Developer
 **Ritesh Raj** - [GitHub Profile](https://github.com/riteshthakur21)
 
