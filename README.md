@@ -2,7 +2,7 @@
 
 An AI-powered offline personal assistant developed by **Ritesh Raj**.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
 [![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-orange.svg)](https://ollama.com/)
 [![Speech TTS](https://img.shields.io/badge/TTS-LuxTTS%20%2F%20Kokoro-blueviolet.svg)](https://github.com/codewithbro95/JarvisLuxTTS)
@@ -12,7 +12,7 @@ J.A.R.V.I.S is a Python-based offline AI assistant designed to provide voice int
 ---
 
 ## 📸 Sneak Peek (WIP UI)
-You can view a preview of the desktop UI (still in active development) in the [koki/README.md](file:///C:/Users/rites/AI Project/JARVIS/koki/README.md) file.
+You can view a preview of the desktop UI (still in active development) in the [koki/README.md](./koki/README.md) file.
 
 ---
 
@@ -68,7 +68,6 @@ graph TD
 * **Language:** Python
 * **LLM Engine:** Ollama
 * **Computer Vision:** OpenCV
-* **Text-To-Speech (TTS):** LuxTTS (via [JarvisLuxTTS](https://github.com/codewithbro95/JarvisLuxTTS)) / Kokoro
 * **Local Models:** Llama-2-7b-chat-jarvis (fine-tuned on custom Stark-Jarvis dialog datasets) / Llava (Vision)
 * **Concurrency:** AsyncIO
 
@@ -78,12 +77,12 @@ graph TD
 
 | Directory/File | Purpose |
 | -------------- | ------- |
-| [`modules/`](file:///C:/Users/rites/AI Project/JARVIS/modules) | Core assistant functionality (vision, speech, command execution, NLP) |
-| [`config/`](file:///C:/Users/rites/AI Project/JARVIS/config) | Configuration files and initialization scripts |
-| [`dataset/`](file:///C:/Users/rites/AI Project/JARVIS/dataset) | Training dataset resources and model preparation notebooks |
-| [`ollama/`](file:///C:/Users/rites/AI Project/JARVIS/ollama) | Local model integration, custom model configurations, and Modelfiles |
-| [`koki/`](file:///C:/Users/rites/AI Project/JARVIS/koki) | UI and frontend desktop application resources (React + TypeScript + Electron) |
-| [`assets/`](file:///C:/Users/rites/AI Project/JARVIS/assets) | Static assets, saved image captures, and local resources |
+| [`modules/`](./modules) | Core assistant functionality (vision, speech, command execution, NLP) |
+| [`config/`](./config) | Configuration files and initialization scripts |
+| [`dataset/`](./dataset) | Training dataset resources and model preparation notebooks |
+| [`ollama/`](./ollama) | Local model integration, custom model configurations, and Modelfiles |
+| [`koki/`](./koki) | UI and frontend desktop application resources (React + TypeScript + Electron) |
+| [`assets/`](./assets) | Static assets, saved image captures, and local resources |
 
 ---
 
@@ -138,7 +137,7 @@ cp .env.example .env
 
 ## 🔌 API & Function Calling
 Jarvis has built-in support for grounding its conversation using local/external function calls.
-For example, check [function_calling.py](file:///C:/Users/rites/AI Project/JARVIS/function_calling.py) to see how Jarvis intercepts queries (like weather or sky color) to query APIs before returning grounded, accurate results without hallucination.
+For example, check [function_calling.py](./function_calling.py) to see how Jarvis intercepts queries (like weather or sky color) to query APIs before returning grounded, accurate results without hallucination.
 
 To try function calling:
 ```bash
@@ -165,7 +164,7 @@ If Jarvis outputs a connection error when communicating with Ollama:
 #### 3. Webcam Not Found (Computer Vision)
 If capturing an image throws an error:
 * Verify that your webcam is connected and not being used by another application (e.g., Zoom, Teams).
-* In [main.py](file:///C:/Users/rites/AI Project/JARVIS/main.py), you can change the capture index `cv2.VideoCapture(0)` to another index (e.g., `1`) if you have multiple cameras.
+* In [main.py](./main.py) you can change the capture index `cv2.VideoCapture(0)` to another index (e.g., `1`) if you have multiple cameras.
 
 ---
 
@@ -181,7 +180,7 @@ If capturing an image throws an error:
 ---
 
 ## 🤝 Contributing & Development
-Please refer to [CONTRIBUTOR.md](file:///C:/Users/rites/AI Project/JARVIS/CONTRIBUTOR.md) for local development setup, model quantization, and contribution guidelines.
+Please refer to [CONTRIBUTOR.md](./CONTRIBUTOR.md) for local development setup, model quantization, and contribution guidelines.
 
 ---
 
@@ -203,7 +202,7 @@ Please refer to [CONTRIBUTOR.md](file:///C:/Users/rites/AI Project/JARVIS/CONTRI
 ---
 
 ## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](file:///C:/Users/rites/AI Project/JARVIS/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
